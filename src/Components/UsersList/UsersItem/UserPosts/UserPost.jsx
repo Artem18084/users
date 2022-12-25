@@ -8,7 +8,7 @@ export default function UserPost() {
   return (
     <Link to="/user'sPosts">
       <button onClick={() => dispatch(getUserPosts())} className="text-sm">
-        User'sPost
+        User'sPosts
       </button>
     </Link>
   );

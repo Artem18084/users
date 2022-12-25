@@ -4,7 +4,7 @@ import UserPostItems from "./UserPostItems/UserPostItems";
 
 export default function UserPostList() {
   return (
-    <main >
+    <main className="flex flex-col justify-center items-center" >
       <MainBtn />
       <UserPostItems />
     </main>

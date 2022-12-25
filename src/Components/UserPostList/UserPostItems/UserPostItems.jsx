@@ -9,11 +9,14 @@ export default function UserPostItems() {
   );
   console.log("filtered", filterAccordingToId);
   return (
-    <section>
+    <section className="w-1/2">
       {filterAccordingToId.map((item, index) => (
-        <article>
-          <h3 className="bg-gray-300">{index + 1 + ") " + item.title}</h3>{" "}
-          <p className="bg-red-500">{item.body}</p>
+        <article className="mb-2 ">
+          <h3 className="bg-gray-300 capitalize">
+            {index + 1 + ") "}
+            {item.title}
+          </h3>{" "}
+          <p className="bg-red-500">{' "' + item.body + '"'}</p>
         </article>
       ))}
     </section>

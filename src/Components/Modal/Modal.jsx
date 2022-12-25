@@ -25,9 +25,10 @@ export default function Modal() {
       <article className="w-1/3  bg-slate-200  mt-[25vh] h-1/3 rounded-lg relative p-2">
         {userAlbums
           ?.filter((album) => album.userId === userId)
-          .map((item) => (
+          .map((item,index) => (
             <p key={item.userId} className="">
-              {item.id + ")"}{ item.title}
+              {index + 1 + ")"}
+              {item.title}
             </p>
           ))}
         <button
